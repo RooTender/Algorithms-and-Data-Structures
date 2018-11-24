@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithms and Data Structures", "Algorithms and Data Structures\Algorithms and Data Structures.vcxproj", "{F9C7FCA8-42D1-482E-A325-C5C4027B9371}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9C7FCA8-42D1-482E-A325-C5C4027B9371}.Debug|x64.ActiveCfg = Debug|x64
+		{F9C7FCA8-42D1-482E-A325-C5C4027B9371}.Debug|x64.Build.0 = Debug|x64
+		{F9C7FCA8-42D1-482E-A325-C5C4027B9371}.Debug|x86.ActiveCfg = Debug|Win32
+		{F9C7FCA8-42D1-482E-A325-C5C4027B9371}.Debug|x86.Build.0 = Debug|Win32
+		{F9C7FCA8-42D1-482E-A325-C5C4027B9371}.Release|x64.ActiveCfg = Release|x64
+		{F9C7FCA8-42D1-482E-A325-C5C4027B9371}.Release|x64.Build.0 = Release|x64
+		{F9C7FCA8-42D1-482E-A325-C5C4027B9371}.Release|x86.ActiveCfg = Release|Win32
+		{F9C7FCA8-42D1-482E-A325-C5C4027B9371}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D33FAAF-8716-46BA-8AB3-BD14C93C9702}
+	EndGlobalSection
+EndGlobal
