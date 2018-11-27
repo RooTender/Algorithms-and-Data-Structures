@@ -18,7 +18,7 @@ void Sort::selectionSort()
 {
 	for (int i = 0; i < arrLength - 1; i++)
 	{
-		int minIndex = i;	// Firstly smallest is the first value of array
+		int minIndex = i; // Firstly smallest is the first value of array
 
 		for (int j = 1; j < arrLength; j++)
 			// If (arr[j] < arr[minIndex]) -> set the newest smallest value index
@@ -31,16 +31,16 @@ void Sort::selectionSort()
 }
 void Sort::bubbleSort()
 {
-	for (int i = 0; i < arrLength; i++)				// Repeat checking the array
-		for (int j = 0; j < arrLength - 1; j++)		// Scan the array
-			if (arr[j] > arr[j + 1])				// If (arr[j] > arr[j + 1])	-> swap values
+	for (int i = 0; i < arrLength; i++) // Repeat checking the array
+		for (int j = 0; j < arrLength - 1; j++) // Scan the array
+			if (arr[j] > arr[j + 1]) // If (arr[j] > arr[j + 1]) -> swap values
 				swap(arr[j], arr[j + 1]);
 }
 void Sort::insertionSort()
 {
 	for (int i = 0; i < arrLength - 1; i++)
 	{
-		int lastIndex = i;	// To remember last sorted position
+		int lastIndex = i; // To remember last sorted position
 
 		// Repeat swapping values to fix the array
 		/// 'i' must be greater than zero. Otherwise 'arr[-1]' will be checked
@@ -50,7 +50,7 @@ void Sort::insertionSort()
 			--i;
 		}
 
-		i = lastIndex;	// Set modified 'i' back to normal state
+		i = lastIndex; // Set modified 'i' back to normal state
 	}
 }
 
