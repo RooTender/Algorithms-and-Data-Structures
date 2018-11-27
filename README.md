@@ -1,5 +1,5 @@
 # Algorithms-and-Data-Structures
-C program about Algorithms and Data Structures
+C++/C program about Algorithms and Data Structures
 
 ## Why such a project?
 Well... as a student I found it hard to analyze data structures and algorithms watching only the content from YT or sites for geeks.
