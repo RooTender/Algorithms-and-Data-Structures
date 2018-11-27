@@ -16,10 +16,10 @@ int main()
 	int* arr = new int[arrLength];
 	for (int i = 0; i < arrLength; i++)
 		scanf_s("%d", &arr[i]);
-
-	Sort* sorter = new Sort(arr, arrLength);
-	sorter->insertionSort();
-
+	
+	/* Here create an object of sort module and analyze it! */
+	/* Remember... Have fun! */
+	
 	printArray(arr, arrLength);
 
 	return 0;
