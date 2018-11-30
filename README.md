@@ -12,3 +12,4 @@ Sorting algorithms:
 - Selection Sort
 - Bubble Sort
 - Insertion Sort
+- Merge Sort (NEW!)
