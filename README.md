@@ -13,7 +13,7 @@ Sorting algorithms:
 - Bubble Sort
 - Insertion Sort
 - Merge Sort
-- Quick Sort (NEW!) [<a href="https://youtu.be/MZaf_9IZCrc" target="_blank">Visualisation</a>]
+- Quick Sort (NEW!) [[Visualisation](https://youtu.be/MZaf_9IZCrc)]
 
 ## How can I inspect array values?
 1. Run project
