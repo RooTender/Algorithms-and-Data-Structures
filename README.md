@@ -12,7 +12,8 @@ Sorting algorithms:
 - Selection Sort
 - Bubble Sort
 - Insertion Sort
-- Merge Sort (NEW!)
+- Merge Sort
+- Quick Sort (NEW!)
 
 ## How can I inspect array values?
 1. Run project
