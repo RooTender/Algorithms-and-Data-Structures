@@ -14,7 +14,7 @@ Sorting algorithms:
 - Insertion Sort
 - Merge Sort (NEW!)
 
-# How can I inspect array values?
+## How can I inspect array values?
 1. Run project
 2. Choose 'Locals' window
 3. Right click on **arr** pointer > Add Watch
