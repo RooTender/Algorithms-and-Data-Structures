@@ -40,6 +40,31 @@ void Sort::merge(int &firstIndex, int &middleIndex, int &lastIndex)
 	// Assume that the second array is empty -> insert the rest values of first array to the output
 	while (firstPointer <= middleIndex) arr[iterator++] = tempArray[firstPointer++];
 }
+int Sort::partition(int &firstIndex, int &lastIndex)
+{
+	int pivot = arr[lastIndex];
+
+	int i = firstIndex - 1;	// Select literally nothing on initiation
+	int j = firstIndex; // Select the first value of partition
+
+	// ALGORITHM: If value smaller than pivot -> swap values. GOAL: Separate lower and higher values from pivot!
+	for (j; j < lastIndex; j++)
+		if (arr[j] < pivot) // Swap values to separate lower and higher numbers from pivot [analyze to understand]
+		{
+			i++; 
+			swap(arr[i], arr[j]);
+		}
+
+	i++; // This value is the place of pivot, but earlier it has been indicating last swapped position.
+
+	// Move all higher values from the pivot to the right [>>>]
+	for (int k = lastIndex; k > i; k--)
+		arr[k] = arr[k - 1];
+
+	arr[i] = pivot; // Place pivot on the proper position
+
+	return i; // Return the index of pivot
+}
 
 void Sort::selectionSort()
 {
@@ -93,6 +118,20 @@ void Sort::mergeSort(int firstIndex, int lastIndex)
 		mergeSort(middleIndex + 1, lastIndex); // Create right array
 
 		merge(firstIndex, middleIndex, lastIndex); // Sort array and merge values
+	}
+}
+void Sort::quickSort(int firstIndex, int lastIndex)
+{
+	if (lastIndex == -1) lastIndex = arrLength - 1;	//First Initialization
+
+	if (firstIndex < lastIndex)
+	{
+		// Pivot is a number which right place will be found after partitioning.
+		// Partitioning will also separate lower and higher numbers from pivot.
+		int pivotIndex = partition(firstIndex, lastIndex); 
+
+		quickSort(firstIndex, pivotIndex - 1); // Left array from pivot
+		quickSort(pivotIndex + 1, lastIndex); // Right array from pivot
 	}
 }
 
